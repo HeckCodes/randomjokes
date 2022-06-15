@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:randomjokes/colors.dart';
-import 'package:randomjokes/fonts.dart';
+import 'package:randomjokes/theme/colors.dart';
+import 'package:randomjokes/theme/fonts.dart';
 import 'package:randomjokes/jokes/bloc/random_jokes_bloc.dart';
 
 class HomeScreen extends StatefulWidget {
