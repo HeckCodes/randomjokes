@@ -26,9 +26,23 @@ flutter:
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 
-  # fonts:
-  #   - family: Schyler
-  #     fonts:
-  #       - asset: fonts/Schyler-Regular.ttf
-  #       - asset: fonts/Schyler-Italic.ttf
-  #         style: italic
+  fonts:
+    - family: RubikBubbles
+      fonts:
+        - asset: assets/fonts/RubikBubbles-Regular.ttf
+
+    - family: RubikGlitch
+      fonts:
+        - asset: assets/fonts/RubikGlitch-Regular.ttf
+    
+    - family: RubikMicrobe
+      fonts:
+        - asset: assets/fonts/RubikMicrobe-Regular.ttf
+    
+    - family: RubikMoonrocks
+      fonts:
+        - asset: assets/fonts/RubikMoonrocks-Regular.ttf
+    
+    - family: RubikWetPaint
+      fonts:
+        - asset: assets/fonts/RubikWetPaint-Regular.ttf
