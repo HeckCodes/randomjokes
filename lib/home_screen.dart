@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:randomjokes/colors.dart';
 import 'package:randomjokes/fonts.dart';
+import 'package:randomjokes/jokes/bloc/random_jokes_bloc.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -45,6 +47,20 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
       child: Scaffold(
         backgroundColor: randomColor,
+        floatingActionButton: FloatingActionButton(
+          onPressed: () {
+            BlocProvider.of<RandomJokesBloc>(context).add(
+              RandomJokesEventLoad(
+                language: 'esffg',
+                type: ['single', 'twice'],
+                categories: ['Any'],
+                blacklistFlags: [],
+                safeMode: false,
+              ),
+            );
+          },
+          child: const Icon(Icons.color_lens),
+        ),
       ),
     );
   }

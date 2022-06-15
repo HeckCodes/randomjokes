@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:randomjokes/home_screen.dart';
+import 'package:randomjokes/jokes/bloc/random_jokes_bloc.dart';
 
 void main() {
   runApp(const Root());
@@ -10,10 +12,13 @@ class Root extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Random Jokes',
-      home: HomeScreen(),
+      home: BlocProvider(
+        create: (context) => RandomJokesBloc(),
+        child: const HomeScreen(),
+      ),
     );
   }
 }
