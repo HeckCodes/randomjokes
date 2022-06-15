@@ -2,7 +2,7 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 
-class BackgroundColors {
+class RandomColors {
   final List<Color> colorsList = [
     Colors.red,
     Colors.pink,

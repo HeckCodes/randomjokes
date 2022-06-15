@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import 'home_screen.dart';
+import 'package:randomjokes/home_screen.dart';
 
 void main() {
   runApp(const Root());

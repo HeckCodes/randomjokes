@@ -2,7 +2,7 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 
-class JokeFonts {
+class RandomFonts {
   final List<TextStyle> textStyleList = [
     const TextStyle(fontFamily: 'RubikBubbles'),
     const TextStyle(fontFamily: 'RubikGlitch'),
