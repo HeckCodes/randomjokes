@@ -1,16 +1,17 @@
-# randomjokes
+# Random Jokes
 
-A new Flutter project.
+A flutter app for displaying random jokes.
 
-## Getting Started
+## API used
 
-This project is a starting point for a Flutter application.
+[JokeAPI](https://v2.jokeapi.dev/)
 
-A few resources to get you started if this is your first Flutter project:
+MIT License
+© Copyright 2018-2021 Sv443 / Sv443 Network / Sven Fehler
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+Disclaimer:
+The software is provided "as is", without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose and noninfringement. In no event shall the authors or copyright holders be liable for any claim, damages or other liability, whether in an action of contract, tort or otherwise, arising from, out of or in connection with the software or the use or other dealings in the software.
