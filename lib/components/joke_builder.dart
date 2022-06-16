@@ -77,7 +77,6 @@ class JokeBuilder extends StatelessWidget {
           return Padding(
             padding: const EdgeInsets.only(top: 56, left: 16, right: 16),
             child: Column(
-              mainAxisAlignment: MainAxisAlignment.start,
               children: state.jokeModel!.type == 'single'
                   ? [
                       Text(

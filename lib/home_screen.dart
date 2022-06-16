@@ -50,17 +50,19 @@ class _HomeScreenState extends State<HomeScreen> {
       child: SafeArea(
         child: Scaffold(
           backgroundColor: randomColor,
-          body: Column(
-            children: [
-              JokeBuilder(randomTextStyle: randomTextStyle),
-              const Spacer(),
-              ConfigurationWidget(
-                color: randomColor,
-                textStyle: randomTextStyle,
-                onColorChange: changeColor,
-                onTextStyleChange: changeTextStyle,
-              ),
-            ],
+          body: SingleChildScrollView(
+            child: Column(
+              children: [
+                JokeBuilder(randomTextStyle: randomTextStyle),
+                const SizedBox(height: 100),
+                ConfigurationWidget(
+                  color: randomColor,
+                  textStyle: randomTextStyle,
+                  onColorChange: changeColor,
+                  onTextStyleChange: changeTextStyle,
+                ),
+              ],
+            ),
           ),
         ),
       ),
