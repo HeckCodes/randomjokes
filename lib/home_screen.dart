@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:randomjokes/components/configuration_widget.dart';
+import 'package:randomjokes/components/joke_builder.dart';
 import 'package:randomjokes/theme/colors.dart';
 import 'package:randomjokes/theme/fonts.dart';
 import 'package:randomjokes/jokes/bloc/random_jokes_bloc.dart';
@@ -45,21 +47,21 @@ class _HomeScreenState extends State<HomeScreen> {
         statusBarColor: randomColor,
         systemNavigationBarColor: randomColor,
       ),
-      child: Scaffold(
-        backgroundColor: randomColor,
-        floatingActionButton: FloatingActionButton(
-          onPressed: () {
-            BlocProvider.of<RandomJokesBloc>(context).add(
-              RandomJokesEventLoad(
-                language: 'esffg',
-                type: ['single', 'twice'],
-                categories: ['Any'],
-                blacklistFlags: [],
-                safeMode: false,
+      child: SafeArea(
+        child: Scaffold(
+          backgroundColor: randomColor,
+          body: Column(
+            children: [
+              JokeBuilder(randomTextStyle: randomTextStyle),
+              const Spacer(),
+              ConfigurationWidget(
+                color: randomColor,
+                textStyle: randomTextStyle,
+                onColorChange: changeColor,
+                onTextStyleChange: changeTextStyle,
               ),
-            );
-          },
-          child: const Icon(Icons.color_lens),
+            ],
+          ),
         ),
       ),
     );

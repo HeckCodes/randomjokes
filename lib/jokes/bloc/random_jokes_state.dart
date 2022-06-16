@@ -2,6 +2,7 @@ part of 'random_jokes_bloc.dart';
 
 enum RandomJokeStatus {
   initial,
+  loading,
   loaded,
   error,
 }
@@ -22,6 +23,10 @@ class RandomJokesState extends Equatable {
     required ErrorModel? errorModel,
     required RandomJokeStatus status,
   }) : this._(null, errorModel, status);
+
+  const RandomJokesState.loading({
+    required RandomJokeStatus status,
+  }) : this._(null, null, status);
 
   @override
   List<Object> get props => [status];
